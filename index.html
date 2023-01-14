@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
     <title>PDRG</title>
 </head>
 
 <body>
 
-    <h1> Créez votre planning en un clic !</h1>
+    <h1 class="page-title">Créez votre planning en un clic !</h1>
 
-
-    <h3>Renseignez ici vos cours</h3>
     <form>
-        <label for="NbrMatiere">Combien de matières avez vous?</label>
+        <label for="NbrMatiere" id="nbm">Combien de matières avez vous?</label>
         <input type="number" name="nbr" id="nbr" min="1" step="1">
-        <button type="button" value="Afficher" onclick="displayTags()"></button>
+        <button type="button" value="Afficher" id="validate-button" class="display-tags-button" onclick="displayTags()"></button>
     </form>
     <div id="container"></div>
     <br>
-    <table style="border-collapse: collapse;"></table>
+    <table class="courses-table"></table>
 </body>
 
 </html>
